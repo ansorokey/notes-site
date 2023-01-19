@@ -43,5 +43,28 @@
         <p>a[href] {}</p>
         <p>img[src] {}</p>
         <hr>
+
+        <h2>CSS Selector Combinations</h2>
+        <p>We can chain together several different selectors to target very specific elements.</p>
+
+        <h3>Multiple Elements</h3>
+        <p>A comma between elements will add that element to a list that targets them all.</p>
+        <p>h1, h2, h3 {}</p>
+
+        <h3>Compund Selectors</h3>
+        <p>Naming two elements right after the other (with no space in-between) will select all elements A WITH the class of B.</p>
+        <p>.profile-pic.admin {}</p>
+
+        <h3>Descendant Selectors</h3>
+        <p>Naming an element after another with a space in-between will target all elements B that are any degree of children of A. They do not have to be directly connected. Essentially if B is contained within element A in any way.</p>
+        <p>.guild-card .card-text {}</p>
+
+        <h3>Direct Child Selector</h3>
+        <p>Naming an element after another with a '>' between them will target only the immidiate children B of parent A. Must be a direct connection.</p>
+        <p>,guild-card > img {}</p>
+
+        <h3>Adjacent Children</h3>
+        <p>Naming an element after another with '+' between will target all B elements that come right after A.</p>
+        <p>ul + li {}</p>
     </body>
 </html>
